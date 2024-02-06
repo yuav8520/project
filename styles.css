@@ -28,7 +28,7 @@ svg{
 top svg{
     fill: gray;
 }
-top{
+.layer1 ,.layer2{
     display: grid;
     grid-auto-flow: column;
     padding-top:4dvh ;

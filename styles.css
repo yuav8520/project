@@ -44,3 +44,6 @@ logo img{
     height: 5dvh;
     width: auto;
 }
+.grid{
+    display: grid;
+}

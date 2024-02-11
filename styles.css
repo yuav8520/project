@@ -97,7 +97,9 @@ logo img{
 width: 80dvw;
 
 }
-
+main, right-bar{
+    background-color: lightgrey;
+}
 .projects{
     grid-template-columns: repeat(2,1fr);
     column-gap: 3dvw;
@@ -106,9 +108,22 @@ width: 80dvw;
 }
 span{
     background-color: #f59e0b;
+    width: 1dvw;
+    height: auto;
+    margin-right: 2dvw;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+   
 }
-card{
-    
+card{border-radius: 5px;
+    background-color: white;
+    display: flex;
+    height: 20dvh;
+    width: 25dvw;
+    margin-top:2dvh ;
+    margin-left: 1dvw;
+    /*padding-right: 2dvw;
+    padding-bottom: 2dvh;*/
 }
 content{
     grid-template-columns: 3fr 1fr;

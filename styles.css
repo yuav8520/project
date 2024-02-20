@@ -17,7 +17,8 @@ sidebar{
     background-color: rgb(0, 174, 255);
     color: white;
     width: 20dvw;
-   height: 100%;
+   height: min(100svh,703px);
+
 }
 .side-bar{
     display: flex;

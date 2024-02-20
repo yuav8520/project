@@ -33,9 +33,16 @@ svg{
 top svg{
     fill: gray;
 }
+top{
+    height: 20svh;
+}
+main{
+    height: 80svh;
+}
+
 .layer1 ,.layer2{
     display: flex;
-    padding-top:4dvh ;
+    padding-top:2dvh ;
     padding-left: 3dvw;
 }
 .left,.right{
@@ -101,8 +108,8 @@ main, right-bar{
     background-color: lightgrey;
 }
 .projects{
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 3dvw;
+    grid-template-columns: repeat(2,25dvw);
+    column-gap: min(3dvw,60px);
     row-gap: 5dvh;
     grid-template-rows: repeat(3,1fr);
 }
@@ -125,17 +132,41 @@ card{border-radius: 5px;
     /*padding-right: 2dvw;
     padding-bottom: 2dvh;*/
 }
+card.right{
+    margin-left: 0px;
+}
 text{
     grid-template-rows: 1fr 4fr 2fr;
 }
 icons{
     display: flex;
+    width: 20dvw;
+    gap: 1.5dvw;
+}
+.first{
+ 
+    margin-left: auto;
 }
 icons>svg{
     fill: rgb(70, 70, 70);
+    
 }
 content{
     grid-template-columns: 3fr 1fr;
+}
+announcement, trending{
+    background-color: white;
+    height: 35dvh;
+    grid-auto-flow: row;
+    width: 85%;
+
+}
+announcement>*,trending>*{
+    max-height: 6dvh;
+
+}
+#Treanding{
+    margin-top: 4dvh;
 }
 h5{
     margin:0px;
@@ -143,4 +174,41 @@ h5{
 }
 h3{
     margin-bottom: 0px;
+}
+announcement>div
+{
+height: 100%;
+position: relative;
+left: 10%;
+width: 70%;
+top: 2dvh;
+}
+announcement>div.here::after,announcement>div.here2::after{
+ content: "";
+    position: relative;
+    display: block;
+ ;
+     /* Adjust as needed */
+    height: 2px; /* Adjust the height of the line as needed */
+   width: 100%;
+   opacity: 60%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity as needed */
+  }
+  announcement>div.here2::after{
+    top:1dvh;
+  }
+announcement>div h3{
+    margin-top: 0px;
+}
+.title{
+    margin-top: 2dvh;
+}
+Announcement div,trending div
+{font-size: 14.5px;}
+h3{
+    font-size: 18px;
+}
+text-right{
+    display: block;
+    height: 70px;
 }
